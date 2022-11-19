@@ -99,31 +99,31 @@ function submited(){
     if(check.length == questions.length){
         document.querySelector('#disp2').innerHTML = `<h2>Welcome back ${localStorage.getItem('username')}&#128150 Your final score is  <span style="color: green;">
         ${check.length} out of ${questions.length}&#128513</span><div>You got it all. Nice one!!! I'm so glad you did</div><div>
-        <a href="./cbtIntro.html"><button id = 'refresh'  >Refresh</button></a></div></h2>`
+        <a href="./index.html"><button id = 'refresh'  >Refresh</button></a></div></h2>`
     } 
     else if (check.length > questions.length-6 && check.length < questions.length-1){
         document.querySelector('#disp2').innerHTML = `<h2>Welcome back ${localStorage.getItem('username')}&#128150 Your final score is  <span style="color: yellow;">
         ${check.length} out of ${questions.length} &#128512</span>
         You scored far above average. Thanks for trying
-        <div><a href="./cbtIntro.html"><button id = 'refresh' >Refresh</button></a></div></h2>`
+        <div><a href="./index.html"><button id = 'refresh' >Refresh</button></a></div></h2>`
     }
     else if (check.length > questions.length-10 && check.length < questions.length-5){
         document.querySelector('#disp2').innerHTML = `<h2> Welcome back ${localStorage.getItem('username')}&#128150 Your final score is  <span style="color: orange;">
         ${check.length} out of ${questions.length}&#128526</span>
         You scored Well. You can give it a try again. Thanks for trying
-        <div><a href="./cbtIntro.html"><button id = 'refresh' >Refresh</button></a></div></h2>`
+        <div><a href="./index.html"><button id = 'refresh' >Refresh</button></a></div></h2>`
     }
     else if (check.length > questions.length-15 && check.length < questions.length-11){
         document.querySelector('#disp2').innerHTML = `<h2>Welcome back ${localStorage.getItem('username')}&#128150 Your final score is  <span style="color: red;">
         ${check.length} out of ${questions.length}&#128528</span>
         You scored below average but no lele. Nice attempt. Thanks for trying
-        <div><a href="./cbtIntro.html"><button id = 'refresh' >Refresh</button></a></div></h2>`
+        <div><a href="./index.html"><button id = 'refresh' >Refresh</button></a></div></h2>`
     }
     else{
         document.querySelector('#disp2').innerHTML = `<h2>Welcome back ${localStorage.getItem('username')}&#128150 Your final score is <span style="color: red;">
         ${check.length} out of ${questions.length}&#128532</span>.You have scored a relatively low score.
         But you can attempt again. Thanks for trying
-        <div><a href="./cbtIntro.html"><button id = 'refresh'  >Refresh</button></a></div></h2>`
+        <div><a href="./index.html"><button id = 'refresh'  >Refresh</button></a></div></h2>`
     }
 }
 var modal = document.getElementById("myModal");
