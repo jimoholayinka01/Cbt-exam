@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(./person-holding-light-bulb-with-graduation-cap_23-2148721299.webp);
+            background-size: cover;
+        }
+        #submitt{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 120px;
+    border: none;border-radius: 15px;font-family: monospace;
+    font-size: 20px;
+}
+#cont{
+    font-size: 25px;
+    color: white;
+    font-family: monospace;
+}
+#wordTyper{
+    color: white;
+    font-family: monospace;
+    font-size: 40px;
+}
+@media(max-width:500px){
+    #cont{
+    font-size: 15px;
+}
+#wordTyper{
+    font-size: 30px;
+}
+#submitt{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+}
+#yourName{
+    height: 30px;
+    width: 250px;
+    font-size: 20px;
+}
+}
+    </style>
+</head>
+<body>
+    <center>
+    <div class="bodyy">
+        <h1><span id="wordTyper"></span> <span class="cursor">|</span></h1> 
+    </div>
+    <input type="text" id="yourName" style="height: 40px; outline: none; font-size: 30px;font-family: monospace; font-weight: 800;">
+    <a href="./cbt.html"><button onclick="userNow()" id="submitt">Submit</button></a></center>
+</body>
+<script>
+    function userNow(){
+    myName = document.getElementById('yourName').value 
+    localStorage.setItem('username',myName)
+}
+let Index = 0;
+let wordIndex = 0
+let content= ["Olayimika is my name.",
+             "Welcome to my cbt trivial game.",
+             "Before you proceed, may I know your nickname or your first name. Thanks "];
+function begin() {
+    if (Index>=content.length) {
+        Index=0
+    }
+    let write = content[Index]
+    writeWords(write) 
+}
+begin()
+
+function writeWords(word) { 
+    wordTyper.innerHTML+= word[wordIndex]
+    wordIndex++
+   setTimeout(() => {
+    if (word[wordIndex]) {
+     writeWords(word)
+    } else {
+        wordIndex=0
+        Index++
+        setTimeout(() => {
+            delette()
+        }, 2000);
+    }
+    
+   }, 70);
+}
+
+function delette() {
+    let slices = wordTyper.innerHTML.toString()
+    let a = slices.slice( slices,-1)
+
+    wordTyper.innerHTML =a
+     setTimeout(() => {
+        if (wordTyper.innerHTML=='') {
+            begin()
+           }
+           else{
+             delette()
+           }
+    }, 100);
+    
+}
+
+
+</script>
+</html>

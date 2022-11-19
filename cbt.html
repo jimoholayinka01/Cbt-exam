@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cbt.css">
+    
+</head>
+<body>
+    <div class="contain">
+        <div style="display: flex; justify-content:space-between;">
+            <div id="number" style="font-size: 30px;"></div>
+            <div id="timeCount"></div>
+        </div>
+        <div onclick="next()" ></div>
+        <h1 id="displayQuestion" style="font-size: 40px;"></h1>
+        <div id="option" style="font-size: 28px;"></div>
+        <div class="butt">
+            <div>
+         <button id="prevv" onclick="prev()">Prev</button><button style="margin-left: 20px;" onclick="next()" id="nect">Next</button></div>
+            <div><button id="submitt">Submit</button></div>
+        </div>
+    </div>
+   <center> <div id="disp2"></div></center>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+             <h1>Are you sure you want to submit? </h1>
+            <div id=" myScore" ></div>
+            <button onclick="submit()" id="yes">Yes</button>
+            <button onclick="no()" id="no">No</button>
+        </div>
+    </div>
+    
+</body>
+<script src="./cbt.js"></script>
+
+</html>

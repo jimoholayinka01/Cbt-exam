@@ -1,0 +1,216 @@
+body{
+    background-image: url(./person-holding-light-bulb-with-graduation-cap_23-2148721299.webp);
+    background-size: cover;
+    background-color: transparent;
+}
+.contain{
+    border: none;
+    height: 55vh;
+    padding: 40px;
+    font-size: 15px;
+    color: white;
+    font-family: monospace;
+    border-radius: 70px;
+    /* opacity: 0.5; */
+}
+#submitt{
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 100px;
+    border: none;border-radius: 15px;font-family: monospace;
+    font-size: 20px;
+}
+#prevv{
+    height: 50px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    border: none;border-radius: 10px;font-family: monospace;
+    font-size: 20px;
+}
+#refresh{
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border: none;border-radius: 10px;
+    font-family: monospace;font-size: 20px;
+    margin-top: 60px;
+}
+#nect{
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 80px;
+    border-radius: 10px;font-family: monospace;font-size: 20px;
+}
+#disp2{
+  color: white;
+  font-family: monospace;
+  font-size: 35px;
+  border: 10px solid black;
+  border-radius: 100px;
+  padding: 60px;
+  width: 50%;
+  height: 60vh;
+  word-spacing: 20px;
+  display: none;
+   
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: grey;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 50px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 30vh;
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+  }
+  
+  /* The Close Button */
+  #timeCount{
+    border-radius: 30px;
+    border: 3px solid black;
+    width: 120px;
+    height: 70px;
+    text-align: center;
+
+  }
+  .close {
+    color: red;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  #yes{
+    height: 40px;
+    background-color: rgb(10, 133, 10);
+    border: none;
+    width: 60px;
+    border-radius: 10px;
+    color: white;
+  }
+  #no{
+    height: 40px;
+    background-color: rgb(233, 12, 12);
+    border: none;
+    width: 60px;
+    border-radius: 10px;
+    color: white;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .butt{
+    display: flex;
+    justify-content: space-between;
+  }
+  @media(max-width:1000px){
+    #disp2{
+      font-size: 30px;
+      height: 50vh;
+      word-spacing: 0px;
+    }
+  }
+  @media(max-width:715px){
+    #disp2{
+      font-size: 25px;
+      height: 50vh;
+      word-spacing: 0px;
+    }
+  }
+  @media(max-width:600px){
+    #disp2{
+      font-size: 20px;
+      height: 45vh;
+      word-spacing: 0px;
+      width: 60%;
+    }
+    #displayQuestion{
+      font-size: 30px !important;
+      width: 100% !important;
+      font-weight: 500 !important;
+    }
+    #number{
+      font-size: 20px !important;
+    }
+    #option{
+      font-size: 25px !important;
+    }
+    #submitt{
+      /* margin-left: 200px;  */
+      height: 50px;
+    }
+    #nect{
+      height: 45px !important;}
+    #prevv{
+      height: 45px !important;}
+
+  }
+  @media(max-width:500px){
+    #displayQuestion{
+      font-size: 20px !important;
+      width: 100% !important;
+      font-weight: 500 !important;
+    }
+    #timeCount{
+      border-radius: 30px;
+      border: 5px solid black;
+      width: 90px;
+      height: 65px;
+      text-align: center;
+  
+    }
+  }
+  @media(max-width:400px){
+    #number{
+      font-size: 15px !important;
+    }
+    #submitt{
+      width: 70px !important;
+      font-size: 15px;
+    }
+    #nect{
+      height: 45px !important;
+      font-size: 15px;
+      width: 70px;
+    }
+
+    #prevv{
+      height: 45px !important;
+      font-size: 15px;
+      width: 70px;
+    }
+    #disp2{
+      /* font-size: 15px; */
+      height: 45vh;
+      width: 60%;
+      
+    }
+
+
+    
+
+  }
