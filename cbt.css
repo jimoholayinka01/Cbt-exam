@@ -188,6 +188,10 @@ body{
     #number{
       font-size: 15px !important;
     }
+    #timeCount{
+      font-size: 12px;
+      height: 60px;
+    }
     #submitt{
       width: 70px !important;
       font-size: 15px;
